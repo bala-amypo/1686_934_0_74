@@ -37,8 +37,7 @@ public class StudentController {
     public Optional<Student> get(@PathVariable Long id) {
         return studentService.getOneStudent(id);
     }
-
-    @PutMapping("/update/{id}")
+  @PutMapping("/update/{id}")
     public String update(@PathVariable Long id, @RequestBody Student newStudent) {
         Optional<Student> student = studentService.getOneStudent(id);
         if (student.isPresent()) {

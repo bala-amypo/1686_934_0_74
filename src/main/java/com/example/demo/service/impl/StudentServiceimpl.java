@@ -13,7 +13,6 @@ public class StudentServiceimpl implements StudentService {
     StudentRepo strepo;
 
     @Override
-   @Override
 public Student insertStudent(Student st) { 
     return strepo.save(st);
 }
